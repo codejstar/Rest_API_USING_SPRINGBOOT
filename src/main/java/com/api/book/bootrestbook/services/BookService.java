@@ -3,8 +3,11 @@ package com.api.book.bootrestbook.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.api.book.bootrestbook.entitiesModel.Book;
 
+@Component
 public class BookService {
 
     private static List<Book> list = new ArrayList<>();
