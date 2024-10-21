@@ -1,1 +1,9 @@
-jaction are used for convert json to object
+jaction are used for convert json to object.
+
+
+POST --> /books          --> create a book --> 201
+POST --> /books/{bookId} --> Read a book -->   200
+POST --> /books/{bookId} --> Update a book --> 200
+POST --> /books/{bookId} --> Delete a book --> 204
+POST --> /books          --> Retrieve all book --> 200,204,206
+
