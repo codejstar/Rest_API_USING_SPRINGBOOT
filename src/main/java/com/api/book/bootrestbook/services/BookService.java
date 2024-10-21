@@ -30,4 +30,8 @@ public class BookService {
         return book;
     }
 
+    public void addBook(Book b) {
+        list.add(b);
+    }
+
 }
