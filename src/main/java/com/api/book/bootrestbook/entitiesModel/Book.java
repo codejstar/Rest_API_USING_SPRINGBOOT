@@ -1,5 +1,6 @@
 package com.api.book.bootrestbook.entitiesModel;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ public class Book {
     private String title;
     // private String author;
     // Non primitive data type
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Author author;
 
     public Book(int id, String title, Author author) {
