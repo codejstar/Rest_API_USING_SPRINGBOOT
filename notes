@@ -16,3 +16,5 @@ jsonBackReferences
 
 @JsonManagedReference
 @JsonBackReference
+
+Spring Boot Rest Api File Uploading 
