@@ -8,4 +8,8 @@ POST --> /books/{bookId} --> Delete a book --> 204
 POST --> /books          --> Retrieve all book --> 200,204,206
 
 
-One to One mapping 
+One to One mapping
+
+Jackson - bidirectional Relationship
+jsonManaged References
+jsonBackReferences

@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,6 +18,9 @@ public class Author {
     private String firstName;
     private String lastName;
     private String language;
+
+    @OneToOne(mappedBy = "author")
+    private Book book;
 
     public int getAuthorId() {
         return authorId;
@@ -54,6 +58,14 @@ public class Author {
     public String toString() {
         return "Author [authorId=" + authorId + ", firstName=" + firstName + ", lastName=" + lastName + ", language="
                 + language + "]";
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
     }
 
 }
