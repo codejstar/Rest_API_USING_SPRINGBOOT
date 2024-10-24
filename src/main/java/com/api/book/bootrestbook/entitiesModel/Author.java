@@ -1,5 +1,7 @@
 package com.api.book.bootrestbook.entitiesModel;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +22,7 @@ public class Author {
     private String language;
 
     @OneToOne(mappedBy = "author")
+    @JsonBackReference
     private Book book;
 
     public int getAuthorId() {

@@ -13,3 +13,6 @@ One to One mapping
 Jackson - bidirectional Relationship
 jsonManaged References
 jsonBackReferences
+
+@JsonManagedReference
+@JsonBackReference
