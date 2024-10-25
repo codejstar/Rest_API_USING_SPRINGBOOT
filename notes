@@ -18,3 +18,11 @@ jsonBackReferences
 @JsonBackReference
 
 Spring Boot Rest Api File Uploading 
+
+C:\Users\Jagdeep jakhu\Desktop\springbootproject\bootrestbook\src\main\resources\static
+
+how to Upload images dynamically 
+using the target folder
+target --> static --> image --> image.jpg
+
+because target folder directly serves the images
